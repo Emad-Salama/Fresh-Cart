@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply pt-16;
+}
+
+.active {
+    @apply text-green-500 underline;
+}
+
+button[disabled] {
+    @apply opacity-40;
+}
+
+.row {
+    @apply flex flex-wrap -mx-4;
+}
+
+.alert {
+    @apply p-4 rounded-lg;
+}
+
+.alert-error {
+    @apply bg-red-100 text-red-600 border border-red-300;
+}
+
+.alert-green {
+    @apply bg-green-100 text-green-600 border border-green-300;
+}
+
+.btn {
+    @apply px-2 py-3 rounded;
+}
+
+.btn-green {
+    @apply bg-green-600 text-white;
+}
+
+.btn-blue {
+    @apply bg-blue-600 text-white;
+}
+
+.product:hover
+{
+    box-shadow: 0px 2px 4px -1px,rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}

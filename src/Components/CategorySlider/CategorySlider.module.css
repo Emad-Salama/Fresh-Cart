@@ -1,0 +1,7 @@
+/* .CategorySlider {} */
+
+.CategoryImage {
+    height: 15.625rem;
+    object-fit: cover;
+    width: 100%;
+}
